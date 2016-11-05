@@ -1,8 +1,8 @@
-# The task was to create stairs of eather numbers or stars
+# The task was to create stairs of either numbers or stars
 # I decided to also add pyramid shape feature as is requires more string sum shenanigans
 # All parameters should be specified by the user and will be asked until he inputs a correct value
 # Also pyramid and stairs scales with input to always stay the right shape (for example if 100 rows are specified:
-#  all lower order numbers in pyramid and stairs will be 001, 002, etc. to keep the right shape)
+# all lower order numbers in pyramid and stairs will be 001, 002, etc. to keep the right shape)
 
 # At start I declare all possible string inputs for user
 answerlist = ['pyramid', 'stairs']
@@ -21,7 +21,7 @@ while True:
             print('Pyramid or stairs!')
             continue
 
-    # Here user must specify what 'bricks' must be used, numbers or stairs.
+    # Here user must specify what 'bricks' must be used, numbers or stars.
     # I check if his input is in list of possible answers and if it is not,
     # i ask him again nicely, until he makes a correct input
     while True:
