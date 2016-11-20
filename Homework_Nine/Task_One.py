@@ -1,5 +1,5 @@
 def leap_year(year):
-    """This function determines eather the year is leap year or not
+    """This function determines either the year is leap year or not
     takes integer value of year
     return True or False"""
     try:
