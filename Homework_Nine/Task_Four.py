@@ -10,7 +10,7 @@ js_studs = {0: 'Antuan', 7: 'Sergiy', 10: 'Anton', 16: 'Ivan', 17: 'Ivan', 23: '
 def both_leng(dict1, dict2):
     """Intersect two dictionaries using list comprehensions
         Takes 2 dictionaries as parameters"""
-    return {i: dict1[i] for i in set(dict1.keys()).intersection(set(dict2.keys()))}
+    return {i: dict1[i] for i in (dict1.keys() & dict2.keys())}
 
 
 def at_least_one(dict1, dict2):
@@ -21,7 +21,7 @@ def at_least_one(dict1, dict2):
 
 
 def only_one(dict1, dict2):
-    """Symmetric difference of two dictionaries by Union - Intersection
+    """Symmetric difference of two dictionaries
         Takes 2 dictionaries as parameters"""
     inter = both_leng(dict1, dict2)
     dict1 = at_least_one(dict1, dict2)
