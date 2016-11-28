@@ -52,6 +52,7 @@ def open_file(file_name):
                 else:
                     print('y for yes, n for no please!')
 
+
 def working_pony(texttocheck):
     """First solution. Iterates through given string and adds symbols to dictionary, also counting their appearance
 
