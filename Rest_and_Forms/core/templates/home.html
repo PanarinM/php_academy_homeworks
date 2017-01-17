@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <br> Top 10 games: <br>
+    {% for game in games %}
+        <a href="{% url 'single_game' game_id=game.id %}">{{ game.activity }}</a> <br>
+    {% endfor %}
+{% endblock content %}
